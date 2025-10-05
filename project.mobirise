@@ -1,0 +1,146 @@
+{
+  "settings": {
+    "name": "suivision-suivision",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.4,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.18",
+    "siteFonts": [],
+    "favicon": "@PROJECT_PATH@/assets/images/suivision-favicon.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://suivision-suivision.github.io/sitemap.xml/",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://suivision-suivision.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "imageResize": false,
+    "usedWebp": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.18"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "SuiVision - Sui Network Explorer",
+        "meta_descr": "Track Sui blockchain activity with SuiVision. Analyze transactions, staking, token flows, and validator performance in real time.",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image03\" group=\"Image & Video\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://suivision.xyz/\"><img src=\"@PROJECT_PATH@/assets/images/suivision.png\" alt=\"suivision\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 pb-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "uYKI8mR6Pn",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "image04-0"
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "2rem 1.5rem"
+              },
+              "@media (min-width: 768px) and (max-width: 991px)": {
+                "padding": "2.25rem"
+              },
+              "@media (min-width: 992px)": {
+                "padding": "4rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"10\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\">\n            <b><a href=\"https://suivision.xyz/\" class=\"text-primary\">SuiVision</a> - Sui Network Explorer</b></h3>\n          <div class=\"row card-box align-left\">\n            \n            <div class=\"item features-without-image col-12 active\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\"><b>What is <a href=\"https://suivision.xyz/\" class=\"text-primary\">SuiVision</a>?</b></h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\">At its core, SuiVision is a block explorer for the Sui blockchain. It allows users to browse and inspect chain data — blocks, transactions, accounts, objects, validators, packages, and more. <br><br><br>It is built by BlockVision, a blockchain infrastructure company. BlockVision provides not only explorer services but also RPC node infrastructure, indexing APIs, and related data tooling. <br><br><br>When Sui’s mainnet launched, SuiVision was one of the first explorers deployed, integrated with RPC services to support Sui developers and users. <br><br><br>In practice, users can go to the SuiVision site (e.g. via suivision.app) and query the network state, inspect addresses, check transaction details, view validator statistics, and more. <br><br><br>Thus, <a href=\"https://suivision.xyz/\" class=\"text-primary\">SuiVision</a> plays a central role as the “lens” through which users and observers can monitor Sui’s on-chain activity.<br><br>Key Features and Capabilities<br><br>SuiVision offers several types of functionality that are standard for block explorers — and a few that are more specific to Sui’s architecture.<br><br>1. Chain / Network Statistics<br><br>One of the first things users see on SuiVision is a dashboard of global metrics:<br><br>Total number of transactions, blocks, and accounts. <br><br><br>Peak throughput (e.g. transactions per second). <br>Suivision<br><br>Total tokens staked, number of validators, staking APY. <br><br>Supply statistics (circulating vs total) and market cap. <br>Suivision<br><br>These give users a real-time or near–real-time window into the health, scale, and activity of the Sui network.<br><br>2. Account / Address Explorer<br><br>Users can input a wallet address and see all data associated with that address:<br><br>Token balances held by the account<br><br>History of transactions (incoming, outgoing, internal)<br><br>NFTs and other objects owned<br><br>Staking/validator relationships (if applicable) <br><br><br>This is essential for users who want to audit their own holdings or verify the activity of other addresses.<br><br>3. Transaction and Block Explorer<br><br>You can search by a transaction hash or block number and see:<br><br>The inputs, outputs, status (success/failure) of the transaction<br><br>Gas usage, fees, timestamps<br><br>Block metadata: which transactions it contains, block size, height, etc.<br><br>Relations between objects modified or created in that transaction <br><br>This is the bread-and-butter of any blockchain explorer — giving visibility into what exactly is happening (or has happened) on-chain.<br><br>4. Validators, Staking, and Consensus Insight<br><br>Because Sui is a proof-of-stake–style network (or uses validators in its consensus), SuiVision includes:<br><br>A list of validators, their staking weights, uptime, performance metrics<br><br>Epoch-level reward data<br><br>Validator commission rates, relationships, and delegations<br><br>This is essential for users who delegate stake or who want to analyze the decentralization of the network.<br><br>5. Packages, Objects, and Developer Tools<br><br>Sui’s architecture involves objects and packages (smart contracts / modules). SuiVision allows queries into:<br><br>Which packages are deployed, and their versions<br><br>The internal state of objects, object transitions, and ownership<br><br>Relations between objects (how one object references another)<br><br>Further, because BlockVision provides APIs and indexing layers, developers may use SuiVision’s backend or related services to integrate on-chain data into applications.<br><br>6. Historical Data and Analytics<br><br><a href=\"https://suivision.xyz/\" class=\"text-primary\">SuiVision</a> maintains historical data, so one can inspect past epochs, trends in transaction volume, account growth over time, etc. This is helpful for research, analytics, reporting, and even compliance or auditing. <br><br>How to Use SuiVision — a Brief Walkthrough<br><br>Here’s a high-level guide to how a user might interact with SuiVision (for someone familiar with block explorers):<br><br>Go to the <a href=\"https://suivision-suivision.github.io/\" class=\"text-primary\">SuiVision</a> website (e.g. suivision.app)<br><br>On the homepage or dashboard, view global metrics (transactions, accounts, staking)<br><br>To inspect an address, enter it in the “Search by Account” field<br><br>The address page will show balances, transaction history, NFTs or objects held<br><br>To inspect a transaction, enter the transaction hash<br><br>You’ll see status, gas, details of the transaction<br><br>To browse a block, input the block number or hash<br><br>You’ll see all transactions, block metadata<br><br>Browse validator list / staking section to see which nodes are active<br><br>Developers can use APIs or indexing endpoints (if exposed) to programmatically fetch data<br><br>In some contexts (e.g. in Japan), users use SuiVision in order to fetch transaction history for tax filing or auditing. <br><br><br>For users whose wallet software seems to disagree with blockchain state, SuiVision can serve as the “ground truth” — one user reported that their wallet’s interface showed zero tokens, while <a href=\"https://suivision-suivision.github.io/\" class=\"text-primary\">SuiVision</a> showed the correct balance. <br>Sui Developer Forum<br><br>Role in the Sui Ecosystem and Value Proposition<br><br><a href=\"https://suivision-suivision.github.io/\" class=\"text-primary\">SuiVision</a> is not just a UI; it underpins transparency, trust, and efficiency in the Sui ecosystem. Its roles and values include:<br><br>Transparency &amp; Auditability: Anyone can verify any transaction or state change on-chain.<br><br>User Trust: Users can check that what their wallet displays matches on-chain truth (or diagnose discrepancies).<br><br>Developer Support: Developers building dApps need query access to chain state — SuiVision’s data and APIs help.<br><br>Ecosystem Monitoring: Observers, researchers, and ecosystem builders can monitor network health, identify trends, and detect anomalies (e.g. spikes in transactions, validator misbehavior).<br><br>Compliance / Reporting: For purposes like taxation or regulatory requirements, historical transaction data from SuiVision is useful.<br><br>Security &amp; Incident Analysis: In the case of hacks, exploits, or disputes, SuiVision provides a forensic view of what happened on-chain.<br><br>Thus, <a href=\"https://suivision-suivision.github.io/\" class=\"text-primary\">SuiVision</a> is a fundamental building block of the Sui infrastructure stack — akin to Etherscan for Ethereum, but tailored to Sui’s architecture and data model.<br><br>Challenges, Criticisms, and Controversies<br><br>While SuiVision is powerful, it is not without its challenges or criticisms. A few notable ones:<br><br>Data accuracy / pricing bugs<br><br>A striking example emerged in May 2025: during a reported hack involving the Cetus protocol, SuiVision reportedly mispriced haSUI (a variant of SUI), leading to an inflated apparent loss of $4.898 billion for a single token. After correcting that error and removing the inflated valuation, the true loss was estimated at around $200 million. <br><br><br>This incident illustrates how errors in token pricing or data presentation in explorers can mislead users, amplify panic, or distort perception of losses.<br><br>Discrepancies between wallet UI and chain state<br><br>As mentioned, some users have noted that their wallet user interface (e.g. in a certain wallet) displayed zero balance, yet SuiVision’s data showed the correct holdings. <br>Sui Developer Forum<br><br>Such mismatches may arise from synchronization issues, caching, RPC or node issues, or wallet bugs — but they can shake user confidence.<br><br>Localization and user-friendliness<br><br>Some guides note that SuiVision, at least in certain regions (e.g. Japan), is currently not localized (e.g. no Japanese-language UI), and the terminology is highly technical. <br><br><br>That can make it more difficult for non-expert users to fully understand or extract useful data without guidance.<br><br>Infrastructure reliability and performance<br><br>Because SuiVision also depends on RPC nodes, indexing layers, and back-end infrastructure, performance, downtime, or latency issues may affect user experience. Users depend on fast, reliable access to chain data. The distributed nature of blockchain networks means that explorers must maintain high availability and strong integrity.<br><br>Centralization / single point of failure<br><br>If most users rely on SuiVision for viewing chain data, then any outage or compromise of <a href=\"https://suivision-suivision.github.io/\" class=\"text-primary\">SuiVision</a> or its backend could obstruct visibility into the chain. Ideally, multiple independent explorers, indexing services, and APIs exist so that users are not overly dependent on a single provider.<br><br>Token analytic complexity<br><br>Sui’s design (with objects, packages, modules) can be more complex than standard account-based chains. That means that not all state transitions or object relationships may be intuitive in the explorer interface. Developing UI and data models to reflect Sui’s unique architecture is nontrivial.<br><br>Future Directions and Improvements<br><br>To become more robust and useful, SuiVision (or future explorers in the Sui ecosystem) may consider:<br><br>Improved pricing oracle integration — better, multi-source price feeds for various tokens (especially derivatives or wrapped versions) to avoid misvaluation errors.<br><br>Localization / multilingual UI support — translating explorer UI and documentation into more languages to serve non–English users.<br><br>Developer-friendly APIs and SDKs — exposing clean, reliable programmatic access for dApp builders, analytics platforms, or wallets.<br><br>Alternative explorers / redundancy — encouraging or enabling multiple, independent explorers so that no single outage cripples access.<br><br>Advanced analytics and dashboards — offering “insights” like top accounts by activity, gas usage trends, anomalous behavior detection, alerts, etc.<br><br>Security and validation layers — mechanisms to detect when data anomalies or inconsistencies occur (for example, flagging suspicious valuation changes or pricing discrepancies), and auditability of explorer data.<br><br>User education and guides — better tutorials, onboarding, glossaries, especially for novice blockchain users who are exploring Sui for the first time.<br><br>Conclusion<br><br>SuiVision (or “Suivision”) is a critical piece of infrastructure in the Sui blockchain ecosystem. As a block explorer, it provides transparency into on-chain activity — letting users, developers, and analysts inspect transactions, accounts, validator performance, and more. Built by BlockVision and tightly integrated with Sui’s architecture, it supports the health and trustworthiness of the ecosystem.<br><br>Yet, with great power comes great responsibility. The recent pricing misvaluation incident reminds us that explorers are not infallible. Users must always cross-check, and ecosystem builders must prioritize accuracy, reliability, and decentralization of data access.<br><br>As Sui matures, SuiVision and its fellow tools will likely evolve — adding better analytics, developer interfaces, redundancy, and user-friendly features. In a blockchain world where “seeing is believing,” block explorers like SuiVision serve as the essential window into the truth of the chain.</p>\n              </div>\n            </div>\n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "uYKI9oA9kW",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
